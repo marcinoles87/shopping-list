@@ -4,7 +4,7 @@ import './item.css'
 
 const Item = (props) => {
     let {value} = props
-  
+
 
     const [pieces , setPieces] = useState(0)
 

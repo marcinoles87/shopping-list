@@ -5,6 +5,9 @@ import Item from './components/Item';
 
  const App = () => {
 
+  
+
+  let [all , setAll] = useState()
   let [total , setTotal] = useState(0)
   let [inputValue , setInputValue] = useState('')
 
@@ -18,8 +21,10 @@ import Item from './components/Item';
   const handleOnChange = (e) => {
     e.preventDefault()
     setInputValue(
-      inputValue = e.target. value
+      inputValue = e.target.value
     )
+
+   
 
   }
   return (
@@ -36,7 +41,7 @@ import Item from './components/Item';
         value = {total}
       ></Item>
     </div>
-      <p>Total : {total}</p>
+      <p>Total : {}</p>
 
     </div>
   );
