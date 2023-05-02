@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 
 const Item = () => {
-    return(
-        <div>
 
+    const [total , setTotal] = useState(0)
+    return(
+        <div className='item-card'>
+            <input placeholder='add item...'/>
+            <p>Total : {total}</p>
         </div>
     )
 }
