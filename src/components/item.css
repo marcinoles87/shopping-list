@@ -1,7 +1,18 @@
 .item-card{
+    margin: 20px;
+    padding: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    
+    align-items: center;
+    background-color: brown;
+}
+
+p{
+    margin: 10px;
+}
+
+button {
+    margin: 10px;
 }
