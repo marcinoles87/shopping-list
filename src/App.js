@@ -6,13 +6,28 @@ import Item from './components/Item';
  const App = () => {
 
   
-
+  let [itemOn , setItemOn] = useState([])
   let [all , setAll] = useState()
   let [total , setTotal] = useState(0)
   let [inputValue , setInputValue] = useState('')
 
   
   const handleonClick = () => {
+
+    setItemOn([...itemOn ,
+      {
+        value : total,
+        totalItem : setAll , 
+        all : all
+
+      
+      }
+    ]
+
+      
+    )
+
+
     setTotal(
       total = inputValue
     )
