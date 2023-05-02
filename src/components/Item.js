@@ -8,11 +8,23 @@ const Item = (props) => {
 
     const [pieces , setPieces] = useState(0)
 
+    const setIncresse = () => {
+        setPieces(
+            pieces + 1
+        )
+    }
+
+    const setDecresse = () => {
+        setPieces(
+            pieces - 1
+        )
+    }
+
     return(
         <div className='item-card'>
            <p>{value}</p>
-           <button>+</button>
-           <button>-</button>
+           <button onClick={setIncresse}>+</button>
+           <button onClick={setDecresse}>-</button>
            <p>Pices : {pieces} </p>
         </div>
     )
