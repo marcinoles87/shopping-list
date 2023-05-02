@@ -31,6 +31,7 @@ const Item = (props) => {
 
 
     return(
+        
         <div className='item-card'>
            <p>{value}</p>
            <button onClick={setIncresse}>+</button>
