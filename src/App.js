@@ -1,10 +1,12 @@
 
 import './App.css';
 import React , {useState} from 'react';
-import Item from './components/Item'
+import Item from './components/Item';
 
  const App = () => {
+
   const [total , setTotal] = useState(0)
+  const [inputValue , setInputValue] = useState('')
 
   
   const handleonClick = () => {
@@ -15,7 +17,12 @@ import Item from './components/Item'
   return (
     <div className="App">
       <h1>Shopping list App</h1>
-      <input placeholder='add item...'/>
+
+      <div className='i'>
+        <input placeholder='add item...'/>
+        <button> Add Item</button>
+      </div>
+
       <Item></Item>
 
       <p>Total : {total}</p>
