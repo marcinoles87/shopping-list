@@ -39,9 +39,11 @@ import Item from './components/Item';
     <div>
       <Item 
         value = {total}
+        totalItem ={setAll}
+        all={all}
       ></Item>
     </div>
-      <p>Total : {}</p>
+      <p>Total : {all}</p>
 
     </div>
   );

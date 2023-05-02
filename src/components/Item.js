@@ -3,7 +3,7 @@ import './item.css'
 
 
 const Item = (props) => {
-    let {value} = props
+    let {value , totalItem , all} = props
 
 
     const [pieces , setPieces] = useState(0)
@@ -12,13 +12,23 @@ const Item = (props) => {
         setPieces(
             pieces + 1
         )
+
+        totalItem(
+            all = pieces+1
+        )
     }
 
     const setDecresse = () => {
         setPieces(
             pieces - 1
         )
+
+        totalItem(
+            all = pieces - 1
+        )
     }
+
+
 
     return(
         <div className='item-card'>
