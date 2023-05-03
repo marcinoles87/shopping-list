@@ -19,13 +19,7 @@ import Item from './components/Item';
         value : total,
         totalItem : setAll , 
         all : all
-
-      
-      }
-    ]
-
-      
-    )
+      }])
 
     console.log(itemOn)
 
@@ -33,6 +27,8 @@ import Item from './components/Item';
     setTotal(
       total = inputValue
     )
+
+
   }
 
   const handleOnChange = (e) => {
