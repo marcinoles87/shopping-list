@@ -15,7 +15,8 @@ import Item from './components/Item';
   
 
 
-      const addItem = () => {
+      const addItem = (e) => {
+        e.preventDefault()
 
         setItemOn([...itemOn ,
           {
@@ -25,14 +26,17 @@ import Item from './components/Item';
           }])
     
         console.log(itemOn)
+        console.log(inputValue)
           
+        
+        setTotal(
+          total = inputValue
+        )
+
         setInputValue(
           inputValue = ''
         )
-    
-        setTotal(
-          total = inputValue
-        )}
+      }
   
 
   const handleOnChange = (e) => {
@@ -40,6 +44,8 @@ import Item from './components/Item';
     setInputValue(
       inputValue = e.target.value
     )
+
+   
 
   }
   return (
@@ -59,9 +65,8 @@ import Item from './components/Item';
       ></Item> */}
     {itemOn.map( (item , index) => {
       return( <Item
-      item = {item}
-      key = {index}
-      value = {total}
+      key = {item.key}
+      value = {item.value}
       ></Item>)}
     )}
 

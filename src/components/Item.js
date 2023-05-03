@@ -3,7 +3,7 @@ import './item.css'
 
 
 const Item = (props) => {
-    let {value , totalItem , all} = props
+    let {value ,  totalItem , all} = props
 
 
     const [pieces , setPieces] = useState(0)
@@ -33,10 +33,12 @@ const Item = (props) => {
     return(
         
         <div className='item-card'>
+            
            <p>{value}</p>
            <button onClick={setIncresse}>+</button>
            <button onClick={setDecresse}>-</button>
            <p>Pices : {pieces} </p>
+            
         </div>
     )
 }
