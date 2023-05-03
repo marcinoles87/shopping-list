@@ -21,7 +21,8 @@ import Item from './components/Item';
         setItemOn([...itemOn ,
           {
             value : inputValue,
-            key : itemOn.length
+            key : itemOn.length,
+            
             
           }])
     
@@ -59,10 +60,13 @@ import Item from './components/Item';
 
     <div>
      
-    {itemOn.map( (item , index) => {
+    {itemOn.map( (item) => {
       return( <Item
-      key = {item.key}
+
       value = {item.value}
+      key = {item.key}
+      totalItem = {setAll}
+      
       ></Item>)}
     )}
 
