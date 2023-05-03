@@ -20,11 +20,15 @@ import Item from './components/Item';
         setItemOn([...itemOn ,
           {
             value : inputValue,
+            key : itemOn.length
             
           }])
     
         console.log(itemOn)
-    
+          
+        setInputValue(
+          inputValue = ''
+        )
     
         setTotal(
           total = inputValue
@@ -55,6 +59,7 @@ import Item from './components/Item';
       ></Item> */}
     {itemOn.map( (item , index) => {
       return( <Item
+      item = {item}
       key = {index}
       value = {total}
       ></Item>)}
