@@ -45,24 +45,20 @@ import Item from './components/Item';
       inputValue = e.target.value
     )
 
-   
+    
+   }
 
-  }
   return (
     <div className="App">
       <h1>Shopping list App</h1>
 
       <div className='i'>
-        <input onChange={handleOnChange} placeholder='add item...'/>
+        <input onChange={handleOnChange} placeholder='add item...' value={inputValue}/>
         <button onClick={addItem}> Add Item</button>
       </div>
 
     <div>
-      {/* <Item 
-        value = {total}
-        totalItem ={setAll}
-        all={all}
-      ></Item> */}
+     
     {itemOn.map( (item , index) => {
       return( <Item
       key = {item.key}
@@ -72,6 +68,7 @@ import Item from './components/Item';
 
 
     </div>
+
       <p>Total : {all}</p>
 
     </div>
