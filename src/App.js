@@ -1,6 +1,6 @@
 
 import './App.css';
-import React , {useState} from 'react';
+import React , {useEffect, useState} from 'react';
 import Item from './components/Item';
 
  const App = () => {
@@ -12,32 +12,30 @@ import Item from './components/Item';
   let [inputValue , setInputValue] = useState('')
 
   
-  const handleonClick = () => {
-
-    setItemOn([...itemOn ,
-      {
-        value : total,
-        totalItem : setAll , 
-        all : all
-      }])
-
-    console.log(itemOn)
+  
 
 
-    setTotal(
-      total = inputValue
-    )
+      const addItem = () => {
 
-
-  }
+        setItemOn([...itemOn ,
+          {
+            value : inputValue,
+            
+          }])
+    
+        console.log(itemOn)
+    
+    
+        setTotal(
+          total = inputValue
+        )}
+  
 
   const handleOnChange = (e) => {
     e.preventDefault()
     setInputValue(
       inputValue = e.target.value
     )
-
-   
 
   }
   return (
@@ -46,7 +44,7 @@ import Item from './components/Item';
 
       <div className='i'>
         <input onChange={handleOnChange} placeholder='add item...'/>
-        <button onClick={handleonClick}> Add Item</button>
+        <button onClick={addItem}> Add Item</button>
       </div>
 
     <div>
@@ -69,5 +67,6 @@ import Item from './components/Item';
     </div>
   );
 }
+
 
 export default App;
