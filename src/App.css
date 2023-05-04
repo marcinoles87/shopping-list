@@ -6,6 +6,10 @@
     width: 50vw;
     background-color: rgb(29, 29, 86);
     color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     
     
 }

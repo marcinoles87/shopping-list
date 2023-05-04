@@ -20,7 +20,7 @@ import Item from './components/Item';
 
         setItemOn([...itemOn ,
           {
-            value : inputValue,
+            value : inputValue.toUpperCase(),
             key : itemOn.length,
             
             
