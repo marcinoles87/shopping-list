@@ -3,13 +3,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50vw;
+    width: 30vw;
     background-color: rgb(29, 29, 86);
     color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    box-shadow: 5px 5px 15px 5px #000000;
     
     
 }
