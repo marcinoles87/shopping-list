@@ -44,9 +44,7 @@ import Item from './components/Item';
     e.preventDefault()
     setInputValue(
       inputValue = e.target.value
-    )
-
-    
+    ) 
    }
 
   return (
@@ -65,7 +63,7 @@ import Item from './components/Item';
 
       value = {item.value}
       key = {item.key}
-      totalItem = {setAll}
+      setAll = {setAll}
       
       ></Item>)}
     )}
@@ -73,7 +71,7 @@ import Item from './components/Item';
 
     </div>
 
-      <p>Total : {all}</p>
+      <p>Total item: {all} and {total}</p>
 
     </div>
   );
