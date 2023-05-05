@@ -3,28 +3,28 @@ import './item.css'
 
 
 const Item = (props) => {
-    let {value ,  setAll , all} = props
+    let {value ,  setAll , quantity} = props
 
 
     const [pieces , setPieces] = useState(0)
 
     const setIncresse = () => {
         setPieces(
-            pieces + 1
+            quantity++
         )
 
         setAll(
-            all = pieces+1
+            quantity
         )
     }
 
     const setDecresse = () => {
         setPieces(
-            pieces - 1
+            quantity--
         )
 
         setAll(
-            all = pieces - 1
+            quantity
         )
     }
 

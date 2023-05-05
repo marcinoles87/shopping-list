@@ -68,13 +68,14 @@ import Item from './components/Item';
       value = {item.value}
       key = {item.key}
       setAll = {setAll}
+      quantity = {item.quantity}
       ></Item>)}
     )}
 
 
     </div>
 
-      <p>Total item: {all} and {total}</p>
+      <p>Total item: {all} </p>
 
     </div>
   );
