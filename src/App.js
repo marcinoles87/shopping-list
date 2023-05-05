@@ -22,6 +22,7 @@ import Item from './components/Item';
           {
             value : inputValue.toUpperCase(),
             key : itemOn.length,
+            quantity : all
             
             
           }])
@@ -47,6 +48,8 @@ import Item from './components/Item';
     ) 
    }
 
+
+   console.log(all)
   return (
     <div className="App">
       <h1>Shopping list App</h1>
