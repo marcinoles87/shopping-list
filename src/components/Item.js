@@ -28,8 +28,6 @@ const Item = (props) => {
         )
     }
 
-
-
     return(
         
         <div className='item-card'>

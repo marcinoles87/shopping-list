@@ -10,25 +10,25 @@ import Item from './components/Item';
   let [all , setAll] = useState()
   let [total , setTotal] = useState(0)
   let [inputValue , setInputValue] = useState('')
+  
 
   
   
-
-
       const addItem = (e) => {
         e.preventDefault()
+
 
         setItemOn([...itemOn ,
           {
             value : inputValue.toUpperCase(),
             key : itemOn.length,
-            quantity : all
+            quantity : 0
             
             
           }])
     
         console.log(itemOn)
-        console.log(inputValue)
+        console.log(itemOn.quantity)
           
         
         setTotal(
@@ -49,7 +49,7 @@ import Item from './components/Item';
    }
 
 
-   console.log(all)
+   
   return (
     <div className="App">
       <h1>Shopping list App</h1>
@@ -62,12 +62,12 @@ import Item from './components/Item';
     <div>
      
     {itemOn.map( (item) => {
-      return( <Item
-
+      return(
+        
+        <Item
       value = {item.value}
       key = {item.key}
       setAll = {setAll}
-      
       ></Item>)}
     )}
 
