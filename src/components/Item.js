@@ -18,7 +18,7 @@ const Item = (props) => {
         )
 
         setQuantity(
-            all
+            quantity
         )
     }
 

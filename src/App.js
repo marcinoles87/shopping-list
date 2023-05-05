@@ -29,7 +29,7 @@ import Item from './components/Item';
             
           }])
     
-        console.log(itemOn[0])
+        console.log(itemOn[1])
         console.log(itemOn.quantity)
           
         
@@ -71,7 +71,7 @@ import Item from './components/Item';
       key = {item.key}
       setAll = {setAll}
       quantity = {item.quantity}
-      setQuantity = {item.setQuantity}
+      setQuantity = {setQuantity}
       ></Item>)}
     )}
 
