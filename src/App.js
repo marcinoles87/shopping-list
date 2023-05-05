@@ -10,10 +10,12 @@ import Item from './components/Item';
   let [all , setAll] = useState()
   let [total , setTotal] = useState(0)
   let [inputValue , setInputValue] = useState('')
+  let [quantity , setQuantity] = useState(0)
+ 
+  
   
 
-  
-  
+
       const addItem = (e) => {
         e.preventDefault()
 
@@ -22,12 +24,12 @@ import Item from './components/Item';
           {
             value : inputValue.toUpperCase(),
             key : itemOn.length,
-            quantity : 0
+            quantity : quantity
             
             
           }])
     
-        console.log(itemOn)
+        console.log(itemOn[0])
         console.log(itemOn.quantity)
           
         
@@ -69,6 +71,7 @@ import Item from './components/Item';
       key = {item.key}
       setAll = {setAll}
       quantity = {item.quantity}
+      setQuantity = {item.setQuantity}
       ></Item>)}
     )}
 

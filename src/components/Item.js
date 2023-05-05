@@ -3,7 +3,7 @@ import './item.css'
 
 
 const Item = (props) => {
-    let {value ,  setAll , quantity , all } = props
+    let {value ,  setAll , quantity ,setQuantity , all } = props
 
 
     const [pieces , setPieces] = useState(0)
@@ -15,6 +15,10 @@ const Item = (props) => {
 
         setAll(
             all = quantity
+        )
+
+        setQuantity(
+            all
         )
     }
 
