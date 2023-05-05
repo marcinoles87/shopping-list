@@ -28,18 +28,9 @@ import Item from './components/Item';
             
             
           }])
-    
-        console.log(itemOn[1])
-        console.log(itemOn.quantity)
           
-        
-        setTotal(
-          total = inputValue
-        )
-
-        setInputValue(
-          inputValue = ''
-        )
+        setTotal(total = inputValue)
+        setInputValue(inputValue = '')
       }
   
 
@@ -50,7 +41,7 @@ import Item from './components/Item';
     ) 
    }
 
-
+   console.log(itemOn)
    
   return (
     <div className="App">
@@ -63,19 +54,21 @@ import Item from './components/Item';
 
     <div>
      
-    {itemOn.map( (item) => {
+    {itemOn.map( (item ,index) => {
       return(
         
         <Item
+      index = {index}
       value = {item.value}
       key = {item.key}
       setAll = {setAll}
       quantity = {item.quantity}
       setQuantity = {setQuantity}
-      ></Item>)}
+      ></Item>
+      )}
     )}
 
-
+      
     </div>
 
       <p>Total item: {all} </p>
