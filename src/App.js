@@ -55,8 +55,8 @@ import Item from './components/Item';
     <div>
      
     {itemOn.map( (item ,index) => {
+      console.log(item)
       return(
-        
         <Item
       index = {index}
       value = {item.value}
@@ -64,6 +64,8 @@ import Item from './components/Item';
       setAll = {setAll}
       quantity = {item.quantity}
       setQuantity = {setQuantity}
+      setItemOn = {setItemOn}
+      itemOn = {itemOn}
       ></Item>
       )}
     )}
