@@ -45,12 +45,16 @@ import Item from './components/Item';
    console.log(itemOn)
 
    const totalCount = (itemon) => {
-    const totalCountItem = itemOn.reduce( (total ,item) => {
-    return  total + item.quantity
-   })
-  
+    console.log(itemOn)
+    const totalCountItem = itemOn.reduce( (total ,item) => 
+      total+item.quantity,0
+
+   )
    console.log(totalCountItem)
+   setCountAll(totalCountItem)
   }
+  
+   
 
    
   return (
@@ -84,7 +88,7 @@ import Item from './components/Item';
       
     </div>
 
-      <p>Total item: {countAll} </p>
+      <p onClick={totalCount}>Total item: {countAll} </p>
 
     </div>
   );
