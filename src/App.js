@@ -44,7 +44,13 @@ import Item from './components/Item';
 
    console.log(itemOn)
 
-   const totalCount = itemOn.reduce()
+   const totalCount = (itemon) => {
+    const totalCountItem = itemOn.reduce( (total ,item) => {
+    return  total + item.quantity
+   })
+  
+   console.log(totalCountItem)
+  }
 
    
   return (
@@ -70,6 +76,7 @@ import Item from './components/Item';
       setQuantity = {setQuantity}
       setItemOn = {setItemOn}
       itemOn = {itemOn}
+      totalCount = {totalCount}
       ></Item>
       )}
     )}

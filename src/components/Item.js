@@ -3,7 +3,7 @@ import './item.css'
 
 
 const Item = (props) => {
-    let { index ,value  ,  setAll , quantity ,setQuantity , setItemOn , itemOn } = props
+    let { index ,value  ,  setAll , quantity ,setQuantity , setItemOn , itemOn , totalCount} = props
 
     let [pieces , setPieces] = useState(0)
 
@@ -15,7 +15,7 @@ const Item = (props) => {
         // setPieces(
         //   quantity = pieces +1
         // )
-
+        
         setAll(
              quantity
         )
