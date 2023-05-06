@@ -5,15 +5,14 @@ import './item.css'
 const Item = (props) => {
     let { value  ,  setAll , quantity ,setQuantity  } = props
 
-
-    
-
-    const [pieces , setPieces] = useState(0)
+    let [pieces , setPieces] = useState(0)
 
     const setIncresse = (index) => {
         
+        
+        console.log(index)
         setPieces(
-          quantity = pieces +1
+          pieces = pieces+1
         )
 
         setAll(
@@ -21,7 +20,7 @@ const Item = (props) => {
         )
 
         setQuantity(
-            quantity
+            quantity = pieces
         )
     }
 
