@@ -87,8 +87,8 @@ import Item from './components/Item';
 
       
     </div>
-
-      <p onClick={totalCount}>Total item: {countAll} </p>
+        <button onClick={totalCount}>sum all pieces </button>
+      <p >Total item: {countAll} </p>
 
     </div>
   );
