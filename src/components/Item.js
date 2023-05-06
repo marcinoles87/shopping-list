@@ -7,12 +7,14 @@ const Item = (props) => {
 
     let [pieces , setPieces] = useState(0)
 
-    const setIncresse = () => {
+    const setIncresse = (index) => {
        
+        const newItems = [...itemOn]
+        newItems[index].quantity++
 
-        setPieces(
-          quantity = pieces +1
-        )
+        // setPieces(
+        //   quantity = pieces +1
+        // )
 
         setAll(
              quantity
@@ -22,6 +24,8 @@ const Item = (props) => {
             pieces
         )
     }
+
+    
 
     const setDecresse = () => {
         setPieces(
@@ -38,9 +42,9 @@ const Item = (props) => {
         <div className='item-card'>
             
            <p>{value}</p>
-           <button onClick={setIncresse}>+</button>
+           <button onClick={ () => setIncresse(index)}>+</button>
            <button onClick={setDecresse}>-</button>
-           <p>Pices : {pieces} </p>
+           <p>Pices : {quantity} </p>
             
         </div>
     )
