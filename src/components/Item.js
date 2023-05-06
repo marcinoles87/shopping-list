@@ -20,17 +20,14 @@ const Item = (props) => {
              quantity
         )
 
-        setQuantity(
-            pieces
-        )
     }
 
     
 
-    const setDecresse = () => {
-        setPieces(
-            quantity = pieces -1
-        )
+    const setDecresse = (index) => {
+
+        const newItems = [...itemOn]
+        newItems[index].quantity--
 
         setAll(
              quantity
@@ -43,7 +40,7 @@ const Item = (props) => {
             
            <p>{value}</p>
            <button onClick={ () => setIncresse(index)}>+</button>
-           <button onClick={setDecresse}>-</button>
+           <button onClick={ () => setDecresse(index)}>-</button>
            <p>Pices : {quantity} </p>
             
         </div>

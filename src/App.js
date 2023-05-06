@@ -11,6 +11,7 @@ import Item from './components/Item';
   let [total , setTotal] = useState(0)
   let [inputValue , setInputValue] = useState('')
   let [quantity , setQuantity] = useState(0)
+  let [countAll , setCountAll] = useState(0)
  
   
   
@@ -42,6 +43,9 @@ import Item from './components/Item';
    }
 
    console.log(itemOn)
+
+   const totalCount = itemOn.reduce()
+
    
   return (
     <div className="App">
@@ -73,7 +77,7 @@ import Item from './components/Item';
       
     </div>
 
-      <p>Total item: {all} </p>
+      <p>Total item: {countAll} </p>
 
     </div>
   );
