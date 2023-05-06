@@ -55,7 +55,7 @@ import Item from './components/Item';
     <div>
      
     {itemOn.map( (item ,index) => {
-      console.log(item)
+     
       return(
         <Item
       index = {index}

@@ -8,21 +8,10 @@ const Item = (props) => {
     let [pieces , setPieces] = useState(0)
 
     const setIncresse = () => {
-        const newItem = [...itemOn].quantity+1
-        console.log(newItem)
-        setItemOn([...itemOn ,
-            {
-              
-             
-              quantity : quantity++
-              
-              
-            }])
-        
-        console.log(index)
+       
 
         setPieces(
-          pieces = pieces+1
+          quantity = pieces +1
         )
 
         setAll(
