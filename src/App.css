@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 30vw;
-    background-color: rgb(29, 29, 86);
+    background-color: rgb(46, 46, 118);
     color: white;
     position: absolute;
     top: 50%;
@@ -15,7 +15,3 @@
     
 }
 
-.item-card{
-
-  
-}

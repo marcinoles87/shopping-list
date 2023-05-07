@@ -1,12 +1,14 @@
 .item-card{
     margin: 20px;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: rgb(23, 71, 245);
+    background-color: rgb(77, 114, 247);
+    border: 1px solid white;
+    border-radius: 10px;
 }
 
 p{
@@ -15,4 +17,6 @@ p{
 
 button {
     margin: 10px;
+    background-color: white;
+    border-radius: 15px;
 }
